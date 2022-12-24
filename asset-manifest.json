@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VolodymyrPakhomov/goit-react-hw-03-image-finder.git/static/css/main.7acaea2f.css",
+    "main.js": "/VolodymyrPakhomov/goit-react-hw-03-image-finder.git/static/js/main.9fe1117a.js",
+    "index.html": "/VolodymyrPakhomov/goit-react-hw-03-image-finder.git/index.html",
+    "main.7acaea2f.css.map": "/VolodymyrPakhomov/goit-react-hw-03-image-finder.git/static/css/main.7acaea2f.css.map",
+    "main.9fe1117a.js.map": "/VolodymyrPakhomov/goit-react-hw-03-image-finder.git/static/js/main.9fe1117a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.9fe1117a.js"
+  ]
+}
