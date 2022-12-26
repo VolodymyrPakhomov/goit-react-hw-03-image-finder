@@ -28,7 +28,7 @@ export class App extends Component {
   };
 
   render() {
-    const { searchQuery, showModal, largeImageURL, page } = this.state;
+    const { searchQuery, showModal, largeImageURL } = this.state;
 
     return (
       <AppConteiner>
