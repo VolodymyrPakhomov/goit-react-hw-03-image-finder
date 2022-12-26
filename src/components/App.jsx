@@ -1,7 +1,5 @@
 import { Component } from 'react';
-import { Button } from 'components/Button/Button';
 import { ImageGallery } from 'components/ImageGallery/ImageGallery';
-import { Loader } from 'components/Loader/Loader';
 import { Modal } from 'components/Modal/Modal';
 import { Searchbar } from 'components/Searchbar/Searchbar';
 import { AppConteiner } from './App.styled';
@@ -11,7 +9,6 @@ export class App extends Component {
     searchQuery: '',
     showModal: false,
     largeImageURL: '',
-    page: 1,
   };
 
   toggleModal = () => {
@@ -30,14 +27,8 @@ export class App extends Component {
     this.setState({ searchQuery });
   };
 
-  onLoadMore = () => {
-    this.setState(prevState => ({
-      page: prevState.page + 1,
-    }));
-  };
-
   render() {
-    const { searchQuery, showModal, largeImageURL } = this.state;
+    const { searchQuery, showModal, largeImageURL, page } = this.state;
 
     return (
       <AppConteiner>
@@ -46,9 +37,6 @@ export class App extends Component {
           searchQueryProps={searchQuery}
           openModal={this.openModal}
         />
-        <Loader />
-        <Button onClick={this.onLoadMore} />
-
         {showModal && (
           <Modal onClose={this.toggleModal} largeImage={largeImageURL} />
         )}

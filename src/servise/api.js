@@ -8,7 +8,7 @@ axios.defaults.params = { key: API_KEY, image_type: 'photo', orientation: 'horiz
 export const fetchImages = async (query, page) => {
   const params = {
     q: query,
-    page,
+    page:page,
   };
   const response = await axios.get('', {params});
   return response.data;
