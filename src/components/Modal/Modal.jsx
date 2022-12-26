@@ -26,8 +26,6 @@ export class Modal extends Component {
   };
 
   render() {
-    // const { webformatURL, tags, largeImageURL } = this.props.hits;
-    // console.log({ webformatURL, tags, largeImageURL });
     return createPortal(
       <Overlay onClick={this.handleBackdropClick}>
         <ModalSection>
